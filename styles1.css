@@ -1,0 +1,168 @@
+/*Font Imports*/
+@font-face{
+    font-family:Roboto;
+    src:url(RobotoSlab-VariableFont_wght.ttf)
+}
+
+body{
+    height: 125vh;
+    background: linear-gradient(to right, green, white, white, red);
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+main{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 980px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav>h1{
+    font-size: 40px;
+    text-align: center;
+    width: 40%;
+}
+
+nav>ul{
+    font-family:Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+nav>ul>li{
+    list-style-type: none;
+}
+
+nav>ul>li:hover{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+figure{
+    background-color: white;
+}
+
+figure>img{
+    width: 100%;
+}
+
+figcaption{
+    position: absolute;
+    font-size: 25px;
+    padding: 5px;
+    background-color: orangered;
+    color: white;
+    top: 678px;
+}
+
+article>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+article>section>section{
+    padding: 5px;
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article>section>section>ul li{
+    list-style-type: circle;
+}
+
+article>section>section>ul{
+    width: 70%;
+}
+
+article>section>section>img{
+    width: 80px;
+}
+
+article>section>section>header{
+    width: 80%;
+    text-align: center;
+}
+
+section>header>h1{
+    font-size: 25px;
+}
+
+section>header>p{
+    text-align: center;
+}
+
+section>header>p, article>section>section>ul{
+    font-family:Roboto;
+    font-size: 14px;
+}
+
+article>section>:nth-child(1){
+    border: 3px solid green;
+}
+
+article>section>:nth-child(2){
+    border: 3px solid black;
+}
+
+article>section>:nth-child(3){
+    border: 3px solid red;
+}
+
+footer{
+    padding: 5px;
+    background-color: yellow;
+    text-shadow: 1px 1px 1px grey;
+    font-weight: bold;
+    text-align: center;
+
+    background-image: url(stars.png);
+    background-position:right;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+}
+
+footer>h1{
+    font-size: 30px;
+}
+
+footer>p{
+    font-size: 15px;
+}
+
+footer>p>a{
+    color: blue;
+    text-decoration: underline;
+}
